@@ -1,0 +1,240 @@
+body, p {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+header {
+    height: 75px;
+    background-color: #125784;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header > div {
+    height: 100%;
+}
+
+header menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+header menu li {
+    padding: 0 20px;
+}
+
+header menu li.border {
+    border-right: 2px solid white;
+}
+
+header menu a {
+    color: white;
+}
+
+header input {
+    font-weight: bold;
+    width: 130px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 110px;
+    gap: 60px;
+}
+
+footer > div:first-child {
+    height: 100%;
+}
+
+footer img {
+    height: 100%;
+    width: auto;
+}
+
+footer h6 {
+    font-size: 30px;
+}
+
+/* Hero section */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/img1.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 50px;
+}
+
+/* Main */
+main > section {
+    background-color: #f57f17;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+main > section > div:first-child {
+    width: 80%;
+    padding: 0 50px;
+}
+
+main > section > div:first-child h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+main > section > div:first-child p {
+    font-size: 20px;
+}
+
+main > section > div:last-child {
+    width: 20%;
+}
+
+/* Aside */
+aside > section:first-child {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+aside > section:first-child > div {
+    flex: 1 1 auto;
+}
+
+aside > section:last-child {
+    background-color: #5e35b1;
+}
+
+aside > section:last-child > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+aside > section:last-child > form > input {
+    width: 50%;
+    height: 30px;
+    font-size: 20px;
+}
+
+aside > section:last-child > form > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+aside > section:last-child > form > div > label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+aside > section:last-child > form > div > div {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+aside > section:last-child > form > textarea {
+    width: 50%;
+    padding: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 425px) {
+    header {
+        height: 125px;
+        flex-direction: column;
+    }
+
+    header > div {
+        height: 80px;
+    }
+
+    header input {
+        display: none;
+    }
+
+    #hero h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    main > section {
+        flex-direction: column;
+    }
+
+    main > section > div:first-child {
+        width: 85%;
+        padding: 20px 0;
+    }
+
+    main > section > div:first-child h2 {
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+
+    main > section > div:first-child p {
+        font-size: 13px;
+    }
+
+    main > section > div:last-child {
+        width: 100%;
+    }
+
+    aside > section:first-child {
+        flex-wrap: wrap;
+    }
+
+    aside > section:first-child > div {
+        width: 50%;
+    }
+
+    aside > section:last-child > form > input, aside > section:last-child > form > textarea, aside > section:last-child > form > div {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    footer > div:first-child {
+        height: 115px;
+    }
+
+    footer > div:last-child {
+        text-align: center;
+    }
+}
